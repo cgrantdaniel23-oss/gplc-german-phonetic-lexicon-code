@@ -1,7 +1,3 @@
-# gplc-german-phonetic-lexicon-code
-A multi-letter uppercase ASCII phonetic transcription standard for German. An alternative to SAMPA optimized for clean string parsing in modern TTS/ASR pipelines.
-
-
 # GPLC: German Phonetic Lexicon Code (v1.0.0)
 
 GPLC (German Phonetic Lexicon Code) is an open-source, machine-readable phonetic transcription standard for the German language. 
@@ -24,61 +20,61 @@ Unlike traditional symbol-dependent formats like SAMPA or the International Phon
 
 | GPLC Token | Sound Property | Native German Example | Pronunciation Guide |
 | :--- | :--- | :--- | :--- |
-| **A** | Short Vowel | M**a**nn | Crisp, short "ah" |
-| **AP** | Long Vowel (A Prime) | B**ah**n | Stretched, open "aaah" |
-| **E** | Short Vowel | B**e**tt | Short "eh" as in *bet* |
-| **EP** | Long Vowel (E Prime) | S**ee** | Long trailing "ay" sound |
-| **I** | Short Vowel | m**i**t | Short "ih" as in *bit* |
-| **IP** | Long Vowel (I Prime) | m**i**r / w**ie** | Stretched "ee" sound |
-| **O** | Short Vowel | K**o**pf | Short "oh" sound |
-| **OL** | Long Vowel (O Prime) | B**oo**t | Deep, long "oh" sound |
-| **U** | Short Vowel | H**u**nd | Short "uh" as in *put* |
-| **UL** | Long Vowel (U Prime) | Sch**uh** | Long, deep "oooh" sound |
+| **A** | Short Vowel | M**a**nn | Vowel in English *bus* / short "ah" |
+| **AP** | Long Vowel (A Prime) | B**ah**n | Stretched vowel in English *father* |
+| **E** | Short Vowel | B**e**tt | Vowel in English *bet* |
+| **EP** | Long Vowel (E Prime) | S**ee** | Vowel in English *say* (without the trailing "y" sound) |
+| **I** | Short Vowel | m**i**t | Vowel in English *bit* |
+| **IP** | Long Vowel (I Prime) | m**i**r / w**ie** | Vowel in English *meet* |
+| **O** | Short Vowel | K**o**pf | Short open "o", like British English *not* |
+| **OL** | Long Vowel (O Prime) | B**oo**t | Vowel in English *boat* (pure "oh" sound) |
+| **U** | Short Vowel | H**u**nd | Vowel in English *put* |
+| **UL** | Long Vowel (U Prime) | Sch**uh** | Vowel in English *boot* |
 
 ### 2. Umlauts & Blends
 
 | GPLC Token | Sound Property | Native German Example | Pronunciation Guide |
 | :--- | :--- | :--- | :--- |
-| **AE** | Short Umlaut | H**ä**nde | Short open "eh" |
-| **AEP** | Long Umlaut (Ä Prime) | K**ä**se | Long drawn-out "ehhh" |
-| **OE** | Short Umlaut | k**ö**nnen | Short rounded "ö" |
-| **OEP** | Long Umlaut (Ö Prime) | sch**ö**n | Long smooth "ööö" |
-| **UE** | Short Umlaut | f**ü**nf | Short sharp "ü" |
-| **UEP** | Long Umlaut (Ü Prime) | T**ü**r | Long continuous "üüü" |
-| **AY** | Diphthong Blend | m**ei**n | Sounds like the English word *my* |
-| **AW** | Diphthong Blend | H**au**s | Sounds like the English word *house* |
-| **OY** | Diphthong Blend | n**eu** | Sounds like the English word *boy* |
-| **AXR** | Unstressed End Vowel | bitt**e** | The soft "uh" schwa sound |
-| **RX** | Vocalic End R | Vat**e**r | The vocalized, soft "er" drop |
+| **AE** | Short Umlaut | H**ä**nde | Same as **E** (vowel in *bet*) |
+| **AEP** | Long Umlaut (Ä Prime) | K**ä**se | Stretched "eh" sound, like vowel in English *care* |
+| **OE** | Short Umlaut | k**ö**nnen | Say **E** with lips rounded like you are saying **O** |
+| **OEP** | Long Umlaut (Ö Prime) | sch**ö**n | Say **EP** with lips rounded like you are saying **OL** |
+| **UE** | Short Umlaut | f**ü**nf | Say **I** with lips rounded like you are saying **U** |
+| **UEP** | Long Umlaut (Ü Prime) | T**ü**r | Say **IP** with lips rounded like you are saying **UL** |
+| **AY** | Diphthong Blend | m**ei**n | Vowel in English *my* |
+| **AW** | Diphthong Blend | H**au**s | Vowel in English *house* |
+| **OY** | Diphthong Blend | n**eu** | Vowel in English *boy* |
+| **AXR** | Unstressed End Vowel | bitt**e** | The "schwa" sound, like the 'a' in *about* |
+| **RX** | Vocalic End R | Vat**e**r | Non-rolled ending 'er', sounds like British *father* |
 
 ### 3. Core & Unique German Consonants
 
 | GPLC Token | Sound Property | Native German Example | Pronunciation Guide |
 | :--- | :--- | :--- | :--- |
-| **KH** | Velar Fricative (Ach-Laut) | a**ch** / Do**ch** | Rough throat sound after A, O, U |
-| **CH** | Palatal Fricative (Ich-Laut) | i**ch** / Re**ch**t | Soft, hissing sound after E, I, Ä, Ö, Ü |
-| **SH** | Sibilant Fricative | **Sch**uh | Standard English "sh" sound |
-| **ZH** | Voiced Sibilant | **G**enie | Smooth "zh" as in *measure* |
-| **TS** | Sharp Affricate | **Z**eit | Crisp "ts" combination |
-| **PF** | Explosive Affricate | **Pf**erd | Pop "p" instantly rolling into "f" |
-| **GL** | Glottal Stop | ver**-**ein | Quick catch of breath between vowels |
-| **NG** | Velar Nasal | ju**ng** | Smooth nasal "ng" |
-| **B** | Plosive | **b**lau | Standard "b" sound |
-| **P** | Plosive | **p**lanen | Standard "p" sound |
-| **D** | Plosive | **d**ann | Standard "d" sound |
-| **T** | Plosive | **t**un | Standard "t" sound |
-| **G** | Plosive | **g**ut | Standard "g" sound |
-| **K** | Plosive | **k**alt | Standard "k" sound |
-| **M** | Nasal | **m**ein | Standard "m" sound |
-| **N** | Nasal | **n**ein | Standard "n" sound |
-| **F** | Fricative | **f**rei | Standard "f" sound |
-| **V** | Fricative | **w**enn | Standard voiced English "v" sound |
-| **S** | Fricative | da**s** | Standard hiss "s" sound |
-| **Z** | Fricative | **s**agen | Standard buzzed voiced "z" sound |
-| **H** | Fricative | **h**ier | Standard breathy "h" sound |
-| **R** | Liquid Consonant | **r**ot | Standard German friction/trilled "r" |
-| **L** | Liquid Consonant | **l**ang | Standard "l" sound |
-| **Y** | Semivowel | **j**a | Standard English "y" sound as in *yes* |
+| **KH** | Velar Fricative (Ach-Laut) | a**ch** / Do**ch** | Throat clearing friction sound, like Scottish *loch* |
+| **CH** | Palatal Fricative (Ich-Laut) | i**ch** / Re**ch**t | Hissing air sound, like the 'h' in English *huge* |
+| **SH** | Sibilant Fricative | **Sch**uh | Consonant in English *shoe* |
+| **ZH** | Voiced Sibilant | **G**enie | Consonant in English *measure* / *vision* |
+| **TS** | Sharp Affricate | **Z**eit | Sounds like the ending of English *cats* |
+| **PF** | Explosive Affricate | **Pf**erd | A 'p' and 'f' pronounced simultaneously |
+| **GL** | Glottal Stop | ver**-**ein | Sound between the syllables of *uh-oh* |
+| **NG** | Velar Nasal | ju**ng** | Ending nasal sound in English *sing* |
+| **B** | Plosive | **b**lau | English *b* |
+| **P** | Plosive | **p**lanen | English *p* |
+| **D** | Plosive | **d**ann | English *d* |
+| **T** | Plosive | **t**un | English *t* |
+| **G** | Plosive | **g**ut | English *g* in *go* |
+| **K** | Plosive | **k**alt | English *k* |
+| **M** | Nasal | **m**ein | English *m* |
+| **N** | Nasal | **n**ein | English *n* |
+| **F** | Fricative | **f**rei | English *f* |
+| **V** | Fricative | **w**enn | English *v* in *vine* |
+| **S** | Fricative | da**s** | English hiss *s* in *sit* |
+| **Z** | Fricative | **s**agen | English voiced *z* in *zebra* |
+| **H** | Fricative | **h**ier | English *h* |
+| **R** | Liquid Consonant | **r**ot | Friction or rolled 'r' in the back of the throat |
+| **L** | Liquid Consonant | **l**ang | English *l* |
+| **Y** | Semivowel | **j**a | English *y* in *yes* |
 
 ---
 
